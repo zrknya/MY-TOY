@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MIX-Music</string>
+    <string name="action_settings">音源设置</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="set_defaut_voice">恢复默认</string>
+    <string name="set_volume">设置音量:</string>
+    <string name="set_voice">设置音效:</string>
+
+</resources>

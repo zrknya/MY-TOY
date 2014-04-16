@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="#ffffff">
+
+    <TextView
+        android:id="@+id/SetVolume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/setvolume_back"
+        android:text="@string/set_volume"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff" />
+
+    <SeekBar
+        android:id="@+id/Volume"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/SetVolume"
+        android:background="@drawable/volume_back"
+        android:paddingRight="55dip" 
+        android:paddingTop="10dip"
+        android:paddingBottom="10dip"
+        android:paddingLeft="2dip"
+        android:maxHeight="30dip"
+        android:minHeight="30dip"
+        android:thumb="@drawable/seekbar_block"
+        android:progressDrawable="@drawable/volume_seekbar"/>
+    
+    
+    <TextView
+        android:id="@+id/TxtVolume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@+id/Volume"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="13dip"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/SetVoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/Volume"
+        android:background="@drawable/setvoice_back"
+        android:text="@string/set_voice"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff" />
+    
+    <ListView
+        android:id="@+id/SelectVoiceList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/SetVoice" 
+        android:dividerHeight="2dip"
+        android:divider="#ffffff"/>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:height="10dip"
+        android:background="@drawable/setvoice_back"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+    
+</RelativeLayout>
