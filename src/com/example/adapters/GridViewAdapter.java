@@ -42,7 +42,7 @@ public class GridViewAdapter extends BaseAdapter {
 	@Override
 	public View getView(int arg0, View arg1, ViewGroup arg2) {
 		// TODO Auto-generated method stub
-		ImageButton button = new ImageButton(context);
+		MyImageButton button = new MyImageButton(context);
 		int position = arg0;
 
 		ButtonListener buttonListener = new ButtonListener(context, position);	

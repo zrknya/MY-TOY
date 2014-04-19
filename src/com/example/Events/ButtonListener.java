@@ -12,6 +12,7 @@ import android.os.Environment;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.View.OnFocusChangeListener;
 import android.view.View.OnTouchListener;
 import android.widget.Toast;
 
@@ -32,7 +33,7 @@ public class ButtonListener implements OnTouchListener, OnClickListener {
 		context = c;
 		position = i;
 	}
-	
+
 	@Override
 	public void onClick(View v) {
 		// TODO Auto-generated method stub
