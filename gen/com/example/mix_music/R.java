@@ -40,10 +40,11 @@ public final class R {
         public static final int test_button_bak=0x7f02000a;
         public static final int test_button_down=0x7f02000b;
         public static final int test_button_down_bak=0x7f02000c;
-        public static final int test_set_button=0x7f02000d;
-        public static final int test_set_button_down=0x7f02000e;
-        public static final int volume_back=0x7f02000f;
-        public static final int volume_seekbar=0x7f020010;
+        public static final int test_button_pause=0x7f02000d;
+        public static final int test_set_button=0x7f02000e;
+        public static final int test_set_button_down=0x7f02000f;
+        public static final int volume_back=0x7f020010;
+        public static final int volume_seekbar=0x7f020011;
     }
     public static final class id {
         public static final int SelectVoiceList=0x7f0a0006;

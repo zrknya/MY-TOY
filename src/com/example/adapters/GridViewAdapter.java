@@ -49,9 +49,7 @@ public class GridViewAdapter extends BaseAdapter {
 		button.setBackgroundResource(R.drawable.play_button);
 		button.setLayoutParams(new GridView.LayoutParams(LayoutParams.MATCH_PARENT, arg2.getWidth()/3-13));
 		//button.setPadding(100, 100, 100, 100);
-		button.setClickable(true);
 		button.setFocusable(true);
-		button.setOnClickListener(buttonListener);
 		button.setOnTouchListener(buttonListener);
 		
 		return button;
