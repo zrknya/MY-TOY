@@ -36,10 +36,10 @@ public class MainActivity extends Activity {
 		setContentView(R.layout.activity_main);
 		getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 		
-		File file = new File(Environment.getExternalStorageDirectory().getPath()+"/Music/");
+		File file = new File(Environment.getExternalStorageDirectory().getPath()+StaticValue.VOICE_DIRECTORY);
 		if(!file.exists())
 		{
-			file.mkdir();
+			file.mkdirs();
 		}
 		
 		MyGridView grid = (MyGridView)findViewById(R.id.gridView1);

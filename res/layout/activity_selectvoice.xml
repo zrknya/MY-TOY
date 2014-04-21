@@ -72,8 +72,10 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
-        android:height="10dip"
+        android:height="20dip"
         android:background="@drawable/setvoice_back"
-        android:textAppearance="?android:attr/textAppearanceSmall" />
+        android:textAppearance="?android:attr/textAppearanceSmall" 
+        android:text="↑这里显示MixMusic文件夹里的音乐"
+        android:textColor="#ffffff"/>
     
 </RelativeLayout>

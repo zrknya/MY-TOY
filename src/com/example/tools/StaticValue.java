@@ -4,6 +4,8 @@ import java.util.Set;
 
 public class StaticValue {
 	
+	public final static String VOICE_DIRECTORY = "/MixMusic/";//音效文件夹
+	
 	public final static String VOICE_PREFERENCES = "VoicePreference";//音效设置配置文件名
 	
 	public final static String VOICE_NAME = "Voice";//音效命名规范

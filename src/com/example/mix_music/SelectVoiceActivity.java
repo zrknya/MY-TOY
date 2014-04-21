@@ -32,7 +32,7 @@ public class SelectVoiceActivity extends Activity {
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.activity_selectvoice);
 		
-		ArrayList<File> voiceFileList = VoiceFileList.getList(Environment.getExternalStorageDirectory().getPath()+"/Music/");
+		ArrayList<File> voiceFileList = VoiceFileList.getList(Environment.getExternalStorageDirectory().getPath()+StaticValue.VOICE_DIRECTORY);
 		ArrayList<String> voiceNameList = new ArrayList<String>();
 		for (File f : voiceFileList) {
 			voiceNameList.add(f.getName());
