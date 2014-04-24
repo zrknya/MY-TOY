@@ -49,6 +49,16 @@ public class MainActivity extends Activity {
 
 			@SuppressWarnings("deprecation")
 			@Override
+			public boolean onDown(MotionEvent e) {
+				// TODO Auto-generated method stub
+				if(e.getX()>getWindowManager().getDefaultDisplay().getWidth()-50){
+					return true;
+				}
+				return super.onDown(e);
+			}
+
+			@SuppressWarnings("deprecation")
+			@Override
 			public boolean onScroll(MotionEvent e1, MotionEvent e2,
 					float distanceX, float distanceY) {
 				// TODO Auto-generated method stub
@@ -69,10 +79,12 @@ public class MainActivity extends Activity {
 	}
 
 	@Override
-	public boolean onTouchEvent(MotionEvent event) {
+	public boolean dispatchTouchEvent(MotionEvent ev) {
 		// TODO Auto-generated method stub
-		detector.onTouchEvent(event);
-		return super.onTouchEvent(event);
+		if(detector.onTouchEvent(ev)){
+			return true;
+		}
+		return super.dispatchTouchEvent(ev);
 	}
 
 	@Override
